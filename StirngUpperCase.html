@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let  str = 'the quick brown fox';
+        // function StringUpperCase(str, n){
+        //     for(let i = 1;i<n;i++){
+
+        //     }
+        // }
+        // StringUpperCase(str.charAt());
+        // StringUpperCase(str.length);
+        function StringUpperCase(word) {
+       var sWord = word.toLowerCase().split(' ');
+   for(var i = 0; i < sWord.length; i++) {
+      sWord[i] = sWord[i].charAt(0).toUpperCase() +
+      sWord[i].substring(1);
+   }
+     return sWord.join(' ');
+}
+       console.log(StringUpperCase("welcome to java script function"));
+    </script>
+</body>
+</html>
